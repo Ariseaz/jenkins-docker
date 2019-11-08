@@ -1,5 +1,5 @@
 # get jenkins image from the same jenkins we are using
-FROM jenkins
+FROM jenkins/jenkins
 # execute the code below with privilege user root
 USER root
 
