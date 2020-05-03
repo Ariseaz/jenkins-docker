@@ -43,6 +43,6 @@ sudo docker exec -u root -t -i [container-id] bash
 ```
 run 
 ```
-apt-get update & apt-get install
+apt-get update & apt-get install -y maven
 ```
 You will have Maven running 
