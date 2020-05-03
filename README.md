@@ -29,3 +29,20 @@ _no valid crumb error_
 ```
 wget --user=admin --password=admin --auth-no-challenge -q --output-document - 'http://localhost:8080/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)'
 ```
+
+TO INCLUDE MAVEN IN THE BUILD 
+There are many options:
+
+1. is to include mavins code in the build
+```
+RUN apt-get update && apt-get install -y maven 
+```
+2. login to the running jenkins container to run
+```
+sudo docker exec -u root -t -i [container-id] bash
+```
+run 
+```
+apt-get update & apt-get install
+```
+You will have Maven running 
